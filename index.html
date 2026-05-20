@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growstack — Build in Public</title>
+  <meta name="description" content="Real lessons from shipping real projects. No fluff, no filler." />
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --fg: #e4e4e7;
+      --accent: #a78bfa;
+      --muted: #71717a;
+      --border: #27272a;
+      --max-w: 680px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+    header {
+      padding: 64px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      color: var(--muted);
+      margin-top: 8px;
+      font-size: 1.05rem;
+    }
+    .tagline { margin-top: 4px; color: var(--accent); font-size: 0.9rem; }
+    main { padding: 48px 0; }
+    .article-list { list-style: none; }
+    .article-list li {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-list li:last-child { border-bottom: none; }
+    .article-list a {
+      text-decoration: none;
+      color: var(--fg);
+      display: block;
+    }
+    .article-list a:hover h2 { color: var(--accent); }
+    .article-list h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      transition: color 0.15s;
+      line-height: 1.4;
+    }
+    .article-list .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .article-list .excerpt {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: #a1a1aa;
+      line-height: 1.6;
+    }
+    footer {
+      padding: 32px 0 64px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    .push-note {
+      background: #1c1c1c;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 32px 0;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85rem;
+      line-height: 1.8;
+    }
+    .push-note code {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Growstack</h1>
+      <p>Building in public. Shipping real projects. Writing down what works.</p>
+      <div class="tagline">No fluff. No filler. Just constraints.</div>
+    </header>
+    <main>
+      <ul class="article-list">
+        <li>
+          <a href="/articles/athletix-postmortem.html">
+            <h2>The Athletix Postmortem: What I Learned Building a Gym Website for a Real Client</h2>
+            <div class="meta">May 2026 · 6 min read</div>
+            <div class="excerpt">
+              I spent more time on the pipeline than the site. Most devs would call that a mistake.
+              I call it the best learning decision I made. Introducing The Stacking Force framework.
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p>Built with <a href="https://pages.github.com">GitHub Pages</a> · by <a href="https://github.com/edostovic">edostovic</a></p>
+    </footer>
+  </div>
+</body>
+</html>
